@@ -1,0 +1,22 @@
+
+{
+  "manifest_version": 3,
+  "name": "MultiLogin Extension",
+  "version": "1.1",
+  "description": "Login otomatis ke banyak akun lewat 1 klik.",
+  "permissions": ["tabs", "cookies", "storage"],
+  "host_permissions": [
+    "*://*.bilibili.tv/*",
+    "*://*.youtube.com/*",
+    "*://*.facebook.com/*",
+    "*://*.instagram.com/*",
+    "*://*.tiktok.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/yt.png"
+  }
+}
